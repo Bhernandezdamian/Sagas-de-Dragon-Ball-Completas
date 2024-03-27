@@ -1,0 +1,84 @@
+/* Estilos generales */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-image: url('dragon ballz.jpg'); /* Reemplaza 'dragon_ball_image.jpg' con la ruta de tu imagen */
+    background-size: cover;
+    background-position: center;
+    color: #fff;
+    text-align: center;
+    padding: 100px 0; /* Ajusta el espaciado superior e inferior según sea necesario */
+}
+
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+#video-container {
+    margin-top: 20px;
+}
+
+/* Estilos para la lista de capítulos */
+#capitulos-list li {
+    cursor: pointer;
+    padding: 15px 20px;
+    margin: 10px 0;
+    background-color: #f5f5f5; /* Cambia el color de fondo */
+    border-radius: 10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Sombra suave */
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+#capitulos-list li:hover {
+    transform: translateY(-5px); /* Efecto de elevación al pasar el cursor */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Aumenta la sombra al pasar el cursor */
+}
+
+
+
+/* Estilos para los botones */
+button {
+    cursor: pointer;
+    padding: 12px 24px;
+    border: 2px solid #4CAF50;
+    background-color: transparent;
+    color: #4CAF50;
+    border-radius: 5px;
+    transition: all 0.3s ease;
+    font-size: 16px;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+button:hover {
+    background-color: #4CAF50;
+    color: white;
+}
+
+/* Estilos para los medios más pequeños (p.ej. teléfonos móviles) */
+@media (max-width: 768px) {
+    header {
+        padding: 15px 0;
+    }
+
+    #capitulos-list li {
+        padding: 10px;
+    }
+
+    button {
+        padding: 8px 16px;
+    }
+
+    iframe {
+        width: 100%;
+        max-width: 100%;
+        height: auto;
+    }
+}
